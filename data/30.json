@@ -1,0 +1,448 @@
+{
+    "set": "train",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi there. I was hoping we could talk about the details of my contract."
+        },
+        {
+            "role": "Candidate",
+            "input": "I want a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Hi! I'm interested in hiring you and I have an offer to present. Let's see if we can come to a mutually beneficial agreement! Looking forward to hearing from you."
+        },
+        {
+            "role": "Employer",
+            "input": "Hello, I would like to hire you and here's what I'm willing to offer at the moment. I hope we can reach an agreement soon! Hope to hear from you soon.",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm interested in a position as a project manager.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I am expecting a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "I can certainly put you on the fast track to get there, but you'll need to demonstrate your capabilities first.",
+            "output": [
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "I will put you on the fast promotion track to get there, but you need to prove your worth first."
+        },
+        {
+            "role": "Candidate",
+            "input": "Absolutely, I'm open to that. Is there anything else we should discuss regarding the project manager role?",
+            "output": [
+                {
+                    "Accept": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I accept a fast promotion track. I would like to continue and discuss another issue. I want a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "How about starting as team manager and working your way up for a few months?",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Team Manager"
+                    }
+                }
+            ],
+            "original_utterance": "How about starting as team manager and working your way up for a few months?"
+        },
+        {
+            "role": "Candidate",
+            "input": "That sounds like a great opportunity. Can we discuss the salary? I'm thinking something around 120,000.",
+            "output": [
+                {
+                    "Accept": {
+                        "Job Description": "Team Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I accept team manager position. Now let's talk about how we can agree on other issues. I am willing to have a salary of 120,000"
+        },
+        {
+            "role": "Employer",
+            "input": "That's a bit high for someone without any experience. Why don't we start with the team manager role and see how it goes?",
+            "output": [],
+            "original_utterance": "You need some experience first."
+        },
+        {
+            "role": "Employer",
+            "input": "I'm willing to negotiate a bit on the salary, what do you think about 90,000? ",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "90,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I'm willing to compromise a bit on the salary, but you need to meet me halfway. How about 90,000?"
+        },
+        {
+            "role": "Candidate",
+            "input": "90,000 sounds reasonable. Let's talk about other aspects of the job, such as a company car. ",
+            "output": [
+                {
+                    "Accept": {
+                        "Salary": "90,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I accept a salary of 90,000. Now let's talk about how we can agree on other issues. I am expecting a company car"
+        },
+        {
+            "role": "Candidate",
+            "input": "I am willing to have a company car",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "augmented_input_bak": "That can be arranged."
+        },
+        {
+            "role": "Employer",
+            "input": "All our company cars are taken right now, but if you get promoted, you'll be able to get one. I'm afraid you'll have to go without a car for now. Is that okay?",
+            "output": [
+                {
+                    "Reject": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "All the company cars are used up at the moment. Once you get a promotion you will get a company car. For now You will have to go without a car. Is that ok?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I was hoping to get a company car.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I am expecting a company car"
+        },
+        {
+            "role": "Employer",
+            "input": "If you accept the 10% raise, then we can make that happen.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "10%"
+                    }
+                }
+            ],
+            "original_utterance": "If you accept 10%  then I will give you a company car."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm happy to accept the previous offer and move forward, but I can only commit to an 8-hour workday.",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I accept the previous offer. I would like to move on. I am willing to have a workday of 8 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "As the team manager, I need you to work 10 hours.",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I need you to work 10 hours because you are the team manager."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm sorry, but that's not something I'm comfortable with.",
+            "output": [
+                {
+                    "Reject": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I reject a workday of 10 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "The minimum I can offer is 9 hours.",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "9 hours is the lowest I will go."
+        },
+        {
+            "role": "Candidate",
+            "input": "Sorry, I can't accept that.",
+            "output": [
+                {
+                    "Reject": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse 9 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "Please think it over.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I hope you reconsider."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm looking for a fast promotion track.",
+            "output": [
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "I want a fast promotion track"
+        },
+        {
+            "role": "Employer",
+            "input": "How about we meet in the middle? I offered 8 hours, but 10 hours seems fair.",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "You asked for 8 hours, I countered with 10 hours. I think it's fair to meet in the middle?"
+        },
+        {
+            "role": "Candidate",
+            "input": "No, 9 hours won't work for me.",
+            "output": [
+                {
+                    "Reject": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse 9 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "I offered you a fast-track promotion, but it requires you to work at least 9 hours for me.",
+            "output": [
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I gave you a fast promotion track, but you need to work at least 9 hours for me."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm sorry, but I don't think that's feasible.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I disagree"
+        },
+        {
+            "role": "Employer",
+            "input": "Is there any way you could commit to more than 8 hours?",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "Is there any way you will work more than 8 hours?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm not comfortable with a 9-hour workday.",
+            "output": [
+                {
+                    "Reject": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I disagree about a workday of 9 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "How about 10 hours for 120,000?",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "Would you work 10 hours for 120,000?"
+        },
+        {
+            "role": "Candidate",
+            "input": "No, I don't think that's a good deal.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I reject the previous offer"
+        },
+        {
+            "role": "Employer",
+            "input": "What if I gave you a promotion to project manager? Would you be willing to work 10 hours then?",
+            "output": [],
+            "original_utterance": "or if I increased something else?"
+        },
+        {
+            "role": "Employer",
+            "input": "If I promoted you to project manager would you work 10 hours?",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Sure, that sounds good. Let's discuss what other benefits we can come to an agreement on. For instance, I was hoping for a company car."
+        },
+        {
+            "role": "Candidate",
+            "input": "I agree. Now let's talk about how we can agree on other issues. I am expecting a company car",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "You can have a company car. It's a done deal. ",
+            "output": [
+                {
+                    "Accept": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "You can have a company car. It's a done deal. "
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept. We can sign the agreement now. Please pick the values in the agreement draft and press Sign.",
+            "input": "Wow, that's great news! I'm really pleased you accepted my proposal. Shall we go ahead and sign the agreement now?"
+        },
+        {
+            "role": "Employer",
+            "input": "",
+            "output": [],
+            "original_utterance": "Welcome to the team! You're hired."
+        },
+        {
+            "role": "Employer",
+            "input": "Absolutely! Let's make it official. Welcome to the team, you're hired!",
+            "output": [],
+            "original_utterance": "Thank you, you too!"
+        }
+    ]
+}

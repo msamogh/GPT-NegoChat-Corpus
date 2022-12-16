@@ -1,0 +1,343 @@
+{
+    "set": "train",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi there. I'd like to talk about the terms of my contract."
+        },
+        {
+            "role": "Candidate",
+            "input": "I would like a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Absolutely, what would you like to discuss? "
+        },
+        {
+            "role": "Employer",
+            "input": "Sure, what would yo like to discuss?",
+            "output": [
+                {
+                    "Query": "Offer"
+                }
+            ],
+            "augmented_input_bak": "I'm interested in a project manager role."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm interested in the project manager position.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I want a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "Sure, what salary range were you looking for? I was thinking of starting at 60,000.",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                },
+                {
+                    "Query": {
+                        "Offer": "Salary"
+                    }
+                }
+            ],
+            "original_utterance": "Okay, we can do that. What Salary are you looking for? I'm thinking starting off at 60,000 would be good."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm hoping for something closer to 120,000.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I am willing to have a salary of 120,000"
+        },
+        {
+            "role": "Candidate",
+            "input": "I agree. Now let's discuss other points of negotiation. I'm hoping to get a company car.",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I agree. Now let's talk about how we can agree on other issues. I want a company car"
+        },
+        {
+            "role": "Employer",
+            "input": "Alright, let's meet in the middle. How does 90,000 sound?",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "90,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "How about we meet in the middle, 90,000?"
+        },
+        {
+            "role": "Candidate",
+            "input": "That sounds fair. I'll accept that salary. Now, let's go back to the topic of a company car.",
+            "output": [
+                {
+                    "Accept": {
+                        "Salary": "90,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I accept a salary of 90,000. Now let's talk about how we can agree on other issues. I want a company car"
+        },
+        {
+            "role": "Employer",
+            "input": "I'm afraid I can't provide a company car right now, but we can discuss that possibility down the line.",
+            "output": [
+                {
+                    "Reject": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "Maybe over time we can provide a car, at right now at the start I have to provide no leased car."
+        },
+        {
+            "role": "Candidate",
+            "input": "I was hoping for a company car.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I am expecting a company car"
+        },
+        {
+            "role": "Employer",
+            "input": "Alright, let's see what we can do about getting you a leased car.",
+            "output": [
+                {
+                    "Accept": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "Okay, I will go ahead and okay the leased car."
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept the leased car",
+            "input": "I'm thrilled that you're allowing me to lease a car."
+        },
+        {
+            "role": "Candidate",
+            "input": "I am willing to have a fast promotion track",
+            "output": [
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Would you be okay with a 0% pension fund?"
+        },
+        {
+            "role": "Employer",
+            "input": "Is 0% pension fund okay?",
+            "output": [
+                {
+                    "Offer": {
+                        "Pension Fund": "0%"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm not accepting 0%. I'd like a pension of 20%",
+            "output": [
+                {
+                    "Reject": {
+                        "Pension Fund": "0%"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I reject 0%. I would like a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "How about we compromise and settle for 10%?",
+            "output": [
+                {
+                    "Offer": {
+                        "Pension Fund": "10%"
+                    }
+                }
+            ],
+            "original_utterance": "How about we meet in the middle, 10%?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I accept a pension of 10%. Let's proceed to another issue. I want a fast promotion track",
+            "output": [
+                {
+                    "Accept": {
+                        "Pension Fund": "10%"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "augmented_input_bak": "That sounds fair. I accept 10% for the pension. What other issue do you have? "
+        },
+        {
+            "role": "Employer",
+            "input": "A fast promotion track sounds great. I'm on board with that. ",
+            "output": [
+                {
+                    "Accept": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "Fast promotion track is good. I'll approve it."
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "It's good to reach an agreement on fast promotion track",
+            "input": "I'm glad we could agree on a fast promotion track. "
+        },
+        {
+            "role": "Candidate",
+            "input": "I'd like to work 8 hours a day if that's possible.",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I am expecting a workday of 8 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "Can you work 10 hours for me? I've already done my part in giving you a company car and fast promotion track.",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "How about 10 hours? I've worked with you on getting you a company car and fast promotion track, can you do 10 hours for me?"
+        },
+        {
+            "role": "Candidate",
+            "input": "Eight hours is my limit.",
+            "output": [
+                {
+                    "Reject": {
+                        "Working Hours": "10 hours"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I reject 10 hours. I want a workday of 8 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "Alright, how about 9 hours as a compromise?",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "How about we meet in the middle again, 9 hours?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I reject 9 hours. I am expecting a workday of 8 hours",
+            "output": [
+                {
+                    "Reject": {
+                        "Working Hours": "9 hours"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "Best I can do is 9 hours.",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I accept the previous offer",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ]
+        }
+    ]
+}

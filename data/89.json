@@ -1,0 +1,184 @@
+{
+    "set": "test",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi, I was hoping to discuss the details of my contract."
+        },
+        {
+            "role": "Candidate",
+            "input": "I want a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Hi there!"
+        },
+        {
+            "role": "Employer",
+            "input": "hello :)",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "augmented_input_bak": "I'm interested in a project manager position."
+        },
+        {
+            "role": "Employer",
+            "input": "Alright, what kind of working hours are you looking for?",
+            "output": [
+                {
+                    "Query": {
+                        "Offer": "Working Hours"
+                    }
+                }
+            ],
+            "original_utterance": "ok, how many working hours ?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm available for an 8 hour workday.",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I am willing to have a workday of 8 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "What kind of promotion opportunities would you be interested in?",
+            "output": [
+                {
+                    "Query": {
+                        "Offer": "Promotion Possibilities"
+                    }
+                }
+            ],
+            "original_utterance": "what kind of promotion possibilities?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm hoping for a fast career advancement.",
+            "output": [
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "I am expecting a fast promotion track"
+        },
+        {
+            "role": "Employer",
+            "input": "What makes you think that's possible?",
+            "output": [],
+            "original_utterance": "are you a real person?"
+        },
+        {
+            "role": "Employer",
+            "input": "What kind of retirement plan are you expecting?",
+            "output": [
+                {
+                    "Query": {
+                        "Offer": "Pension Fund"
+                    }
+                }
+            ],
+            "original_utterance": "what kind of pension fund?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'd like to receive a 20% pension.",
+            "output": [
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I want a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "How about a company car instead?",
+            "output": [
+                {
+                    "Query": {
+                        "Offer": "Leased Car"
+                    }
+                }
+            ],
+            "original_utterance": "what about a leased car?"
+        },
+        {
+            "role": "Candidate",
+            "input": "That sounds like a great option.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I am willing to have a company car"
+        },
+        {
+            "role": "Employer",
+            "input": "Alright, what kind of salary are you expecting?",
+            "output": [
+                {
+                    "Query": {
+                        "Offer": "Salary"
+                    }
+                }
+            ],
+            "original_utterance": "Ok, what about salary"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm looking for a salary of around 120,000.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I am willing to have a salary of 120,000"
+        },
+        {
+            "role": "Employer",
+            "input": "No, that's not possible.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "no."
+        },
+        {
+            "role": "Candidate",
+            "input": "I would like a salary of 90,000",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "90,000 USD"
+                    }
+                }
+            ]
+        }
+    ]
+}

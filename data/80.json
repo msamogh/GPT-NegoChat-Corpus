@@ -1,0 +1,452 @@
+{
+    "set": "test",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi there. I wanted to talk about the details of my contract."
+        },
+        {
+            "role": "Candidate",
+            "input": "I am expecting a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Hello. We are currently looking for a Programmer right now."
+        },
+        {
+            "role": "Employer",
+            "input": "Hello. We are currently hiring for a Programmar.",
+            "output": [
+                {
+                    "Greet": true
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Programmer"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I'd like to accept the position of programmer. Can we discuss the other terms of agreement? I'm looking for a salary of 120,000USD.",
+            "output": [
+                {
+                    "Accept": {
+                        "Job Description": "Programmer"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I accept a position of programmer. Now let's talk about how we can agree on other issues. I want a salary of 120,000"
+        },
+        {
+            "role": "Employer",
+            "input": "I can offer you 60,000USD with a fast promotion track so you can earn a salary raise sooner.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "I can offer you a salary of 60,000USD. With Fast promotion track so you can earn a salary raise sooner."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm sorry, that doesn't work for me.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I refuse"
+        },
+        {
+            "role": "Candidate",
+            "input": "What kind of salary and hours do you have in mind?",
+            "output": [
+                {
+                    "Query": "Offer"
+                }
+            ],
+            "original_utterance": "What do you have to offer?"
+        },
+        {
+            "role": "Employer",
+            "input": "We can offer you 90,000 for 10 hours of work.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "90,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "Okay, I can offer you 90,000 if you work 10 hours."
+        },
+        {
+            "role": "Candidate",
+            "input": "That's not quite what I'm looking for. I'd like to work 8 hours a day with a salary of 120,000.",
+            "output": [
+                {
+                    "Reject": true
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse. I am willing to have a workday of 8 hours and I want a salary of 120,000"
+        },
+        {
+            "role": "Employer",
+            "input": "I can offer 120,000 if you're willing to put in 10 hours.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I can offer 120,000 if you work 10 hours."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm sorry, but I'm going to have to decline that offer.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I reject the previous offer"
+        },
+        {
+            "role": "Employer",
+            "input": "Alright then, let's move on.",
+            "output": [],
+            "original_utterance": "Okay let's move on. "
+        },
+        {
+            "role": "Candidate",
+            "input": "What kind of benefits can you provide?",
+            "output": [
+                {
+                    "Query": "Offer"
+                }
+            ],
+            "original_utterance": "What do you have to offer?"
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "augmented_input_bak": "Oh, sorry, I thought you had different preferences."
+        },
+        {
+            "role": "Candidate",
+            "input": "Yeah, I've changed my mind. I'm expecting a salary of 120,000.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I am expecting a salary of 120,000"
+        },
+        {
+            "role": "Employer",
+            "input": "If we hire you as a project manager, would you be open to working 10 hours a week?",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "Would you be willing to accept 10 hours of work if we hire you are as a project manager"
+        },
+        {
+            "role": "Candidate",
+            "input": "Absolutely. Now let's discuss other elements of the job. I'm hoping for a salary of 120,000.",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I agree. Now let's talk about how we can agree on other issues. I would like a salary of 120,000"
+        },
+        {
+            "role": "Employer",
+            "input": "That's a bit high for us, but I can offer 90,000 and a fast-tracked promotion path.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "90,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "I can offer you 90,000 and fast promotion track."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm sorry, I can't accept the offer you previously made.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I reject the previous offer"
+        },
+        {
+            "role": "Employer",
+            "input": "Okay, how about 90,000 with a 10% pension fund?",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "90,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "10%"
+                    }
+                }
+            ],
+            "original_utterance": "90,000 with a 10% pension fund."
+        },
+        {
+            "role": "Candidate",
+            "input": "No, I'm afraid that's not enough. I would need 120,000 and a 20% pension fund.",
+            "output": [
+                {
+                    "Reject": true
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse. I would like a salary of 120,000 and I am willing to have a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "We can offer you 120,000 USD, but there's no car or pension fund included.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "Without leased car"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "0%"
+                    }
+                }
+            ],
+            "original_utterance": "120,000 USD, No car and no Pension fund"
+        },
+        {
+            "role": "Candidate",
+            "input": "That's not quite what I'm looking for.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I refuse"
+        },
+        {
+            "role": "Candidate",
+            "input": "I am willing to have a salary of 120,000",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "augmented_input_bak": "So what kind of salary are you looking for?"
+        },
+        {
+            "role": "Employer",
+            "input": "We're offering 90,000 USD, no company car and 10% pension fund.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "90,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "Without leased car"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "10%"
+                    }
+                }
+            ],
+            "original_utterance": "90,000 USD, No car and 10% pension fund"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm sorry, that's not acceptable. I'm looking for a salary of 120,000 USD, a company car and a 20% pension fund.",
+            "output": [
+                {
+                    "Reject": true
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse. I am willing to have a salary of 120,000, I would like a company car and I am expecting a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "I'm afraid we can't meet those requirements.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "No."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm looking for a salary of 120,000.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I would like a salary of 120,000"
+        },
+        {
+            "role": "Candidate",
+            "input": "I want a salary of 120,000",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Alright, that would come with a Fast Track position, a car, and 10% pension."
+        },
+        {
+            "role": "Employer",
+            "input": "120,000, Fast Track, with Car, and 10%pension",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "10%"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I agree",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "output": []
+        }
+    ]
+}

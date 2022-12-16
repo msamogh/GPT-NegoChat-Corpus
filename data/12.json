@@ -1,0 +1,142 @@
+{
+    "set": "train",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi there, I'd like to talk about the terms of my contract."
+        },
+        {
+            "role": "Candidate",
+            "input": "I would like a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Sure thing. How does a programmer position with a salary of $120,000 sound?"
+        },
+        {
+            "role": "Employer",
+            "input": "Ok! I can offer you a programmer position with a 120,000 salary.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Programmer"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I agree. Now let's talk about how we can come to an understanding on other issues. Is there any chance of getting a company car?",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I agree. Now let's talk about how we can agree on other issues. I would like a company car"
+        },
+        {
+            "role": "Employer",
+            "input": "Sure, I can arrange that for you, but you'll need to commit to working 9 hours a day. ",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "9 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I can give you a company car, but your working hours will be 9."
+        },
+        {
+            "role": "Candidate",
+            "input": "That's reasonable. Let's move on to another topic. I'm expecting to move up the ranks quickly - what are your thoughts on that?",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "I agree. Let's proceed to another issue. I am expecting a fast promotion track"
+        },
+        {
+            "role": "Employer",
+            "input": "That sounds great. How about a 10% pension?",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "10%"
+                    }
+                }
+            ],
+            "original_utterance": "Yes, that sounds good- but is a 10% pension fun okay?"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm afraid that won't do, I need a 20% pension.",
+            "output": [
+                {
+                    "Reject": {
+                        "Pension Fund": "10%"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I reject a pension of 10%. I want a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "Alright, we can make it 20%.",
+            "output": [
+                {
+                    "Accept": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I can do a pension of 20%!"
+        },
+        {
+            "role": "Candidate",
+            "output": []
+        },
+        {
+            "role": "Candidate",
+            "output": []
+        }
+    ]
+}

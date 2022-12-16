@@ -1,0 +1,268 @@
+{
+    "set": "train",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi there. I wanted to talk about the details of my contract."
+        },
+        {
+            "role": "Candidate",
+            "input": "I demand a salary of 120,000",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "hello",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "I'm offering you 60,000.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "i offer you 60,000"
+        },
+        {
+            "role": "Candidate",
+            "input": "That sounds great. Can we discuss another issue? I was hoping for a project manager role.",
+            "output": [
+                {
+                    "Accept": "Salary"
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I agree with the offer about the salary. I would like to continue and discuss another issue. I want a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "How about a team manager position?",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Team Manager"
+                    }
+                }
+            ],
+            "original_utterance": "how about a position of team manager"
+        },
+        {
+            "role": "Candidate",
+            "input": "I don't think a team manager role is right for me. I'd prefer to be a project manager.",
+            "output": [
+                {
+                    "Reject": {
+                        "Job Description": "Team Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I disagree about a position of team manager. I am willing to have a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "I'm offering you the project manager position, but there won't be any pension fund.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "0%"
+                    }
+                }
+            ],
+            "original_utterance": "of i will offer you project manager, but with no pension fund"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm sorry, but I'll have to decline that offer.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I reject the previous offer"
+        },
+        {
+            "role": "Employer",
+            "input": "How about 10%?",
+            "output": [
+                {
+                    "Offer": {
+                        "Pension Fund": "10%"
+                    }
+                }
+            ],
+            "original_utterance": "10% then"
+        },
+        {
+            "role": "Candidate",
+            "input": "No, I think 20% would be better for me.",
+            "output": [
+                {
+                    "Reject": {
+                        "Pension Fund": "10%"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse 10%. I am willing to have a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "Alright, that works for me.",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ],
+            "original_utterance": "that will work for me"
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept",
+            "input": "I'm thrilled that you've accepted! "
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm looking for a project manager role. ",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I demand a position of project manager"
+        },
+        {
+            "role": "Candidate",
+            "input": "It would be great if I could have the project manager position.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I would like a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "Is a project manager role with a slow promotion track suitable for you?",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Slow promotion track"
+                    }
+                }
+            ],
+            "original_utterance": "project manager and slow promotion track good for you?"
+        },
+        {
+            "role": "Candidate",
+            "input": "Yes, I'm happy to accept the offer. I'm eager to get started and would prefer an 8-hour workday.",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I accept the previous offer. I would like to move on. I want a workday of 8 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "That's doable.",
+            "output": [
+                {
+                    "Accept": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ],
+            "original_utterance": "8 hours works for me."
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept",
+            "input": "I'm so pleased that you accept. "
+        },
+        {
+            "role": "Candidate",
+            "input": "I am willing to have a company car",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "ok i will incude a company car in your agreement.",
+            "output": [
+                {
+                    "Accept": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "output": []
+        },
+        {
+            "role": "Employer",
+            "input": "let's do it",
+            "output": []
+        }
+    ]
+}

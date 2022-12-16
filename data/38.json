@@ -1,0 +1,394 @@
+{
+    "set": "train",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi there. I was hoping to talk about the terms of my contract. "
+        },
+        {
+            "role": "Candidate",
+            "input": "I am expecting a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Unfortunately, the only position we have available right now is for a programmer."
+        },
+        {
+            "role": "Employer",
+            "input": "We currently are only offering the position of a programmer.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Programmer"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm interested in a project manager role rather than a programmer position.",
+            "output": [
+                {
+                    "Reject": {
+                        "Job Description": "Programmer"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I disagree about a position of programmer. I am willing to have a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "I'm prepared to offer you a salary of 60,000 USD.",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I am willing to offer a salary of 60,000 USD"
+        },
+        {
+            "role": "Candidate",
+            "input": "That's not quite what I'm looking for. I'd need at least 120,000 USD to take the job.",
+            "output": [
+                {
+                    "Reject": {
+                        "Salary": "60,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse 60,000. I demand a salary of 120,000"
+        },
+        {
+            "role": "Employer",
+            "input": "I'm sorry, that amount is too much for our company. The most I can offer is $60,000.",
+            "output": [
+                {
+                    "Reject": "Salary"
+                },
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                }
+            ],
+            "original_utterance": "Unfortunately, that sum is exhorbitant for our firm. I can offer no more than 60,000."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'd like to be considered for the position of project manager.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I am willing to have a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "Unfortunately, we don't have any openings for project managers right now. We're only looking to hire programmers at this time.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Programmer"
+                    }
+                },
+                {
+                    "Reject": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "For the moment, we have no openings for project managers. We currently only have an opening for programmers."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm not interested in a programming role; I'd like to be a project manager instead.",
+            "output": [
+                {
+                    "Reject": {
+                        "Job Description": "Programmer"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I reject a position of programmer. I demand a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "Unfortunately, we can't offer any contribution to pension funds.",
+            "output": [
+                {
+                    "Offer": {
+                        "Pension Fund": "0%"
+                    }
+                }
+            ],
+            "original_utterance": "Unfortunately, we cannot offer contribution to pension funds."
+        },
+        {
+            "role": "Candidate",
+            "input": "In that case, I'll need a minimum of 20% pension contribution.",
+            "output": [
+                {
+                    "Reject": {
+                        "Pension Fund": "0%"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I refuse 0%. I demand a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "For us to agree to 20% pension, we will have to justify that by having no leased cars.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "Without leased car"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "For us to agree to 20% pension, we will have to justify that by having no leased cars."
+        },
+        {
+            "role": "Candidate",
+            "input": "That sounds reasonable. I accept the offer. Could we also discuss another issue? I'd be interested in a project manager position.",
+            "output": [
+                {
+                    "Accept": true
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I agree with the offer. I would like to continue and discuss another issue. I would like a position of project manager"
+        },
+        {
+            "role": "Candidate",
+            "input": "I would like a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "I'm sorry, the project manager position is not available. However, we may be able to offer you a spot on the QA team.",
+            "output": [
+                {
+                    "Reject": {
+                        "Job Description": "Project Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Job Description": "QA"
+                    }
+                }
+            ],
+            "original_utterance": "Once again, project manager position is not on offer. However, we may be able to make you part of the QA team"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm hoping for a team manager role, but I'd like to revise our prior agreement. Could I get a 20% pension and a company car?",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Team Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I demand a position of team manager. But I must change our previous agreement. I would like a pension of 20% and I want a company car"
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "augmented_input_bak": "Ah, so you've changed your request."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm interested in a position of project manager.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "original_utterance": "I want a position of project manager"
+        },
+        {
+            "role": "Employer",
+            "input": "I can offer you the role of project manager, but it's only possible if you accept a salary of 60,000 and work 10 hours per week.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I am willing to make you project manager, but it can only happen if you take 60,000 and if you work 10 hours per week"
+        },
+        {
+            "role": "Candidate",
+            "input": "Unfortunately, I'm going to have to decline your offer.",
+            "output": [
+                {
+                    "Reject": true
+                }
+            ],
+            "original_utterance": "I reject the previous offer"
+        },
+        {
+            "role": "Employer",
+            "input": "If you decline the offer, I won't be able to offer you the project manager role.",
+            "output": [],
+            "original_utterance": "If the offer is rejected, I cannot offer you the position of project manager"
+        },
+        {
+            "role": "Candidate",
+            "input": "Is there anything else you could offer me?",
+            "output": [
+                {
+                    "Query": "Offer"
+                }
+            ],
+            "original_utterance": "What are you willing to offer?"
+        },
+        {
+            "role": "Employer",
+            "input": "I could offer a programmer position at $60,000 for 10 hours of work.",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Programmer"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "60,000, programmer, 10 hours"
+        },
+        {
+            "role": "Candidate",
+            "input": "I reject programmer position. I am expecting a position of project manager",
+            "output": [
+                {
+                    "Reject": {
+                        "Job Description": "Programmer"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "Team manager only if you work 10 hours and take 60,000",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Team Manager"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Salary": "60,000 USD"
+                    }
+                },
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ]
+        },
+        {
+            "role": "Candidate",
+            "input": "I disagree. I demand a position of project manager",
+            "output": [
+                {
+                    "Reject": true
+                },
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ]
+        }
+    ]
+}

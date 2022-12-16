@@ -1,0 +1,223 @@
+{
+    "set": "train",
+    "turns": [
+        {
+            "role": "Candidate",
+            "output": [
+                {
+                    "Greet": true
+                }
+            ],
+            "original_utterance": "Hello. I would like to discuss the issues of my contract.",
+            "input": "Hi there. I wanted to talk about the details of my contract."
+        },
+        {
+            "role": "Candidate",
+            "input": "I am expecting a position of project manager",
+            "output": [
+                {
+                    "Offer": {
+                        "Job Description": "Project Manager"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Sure, what position are you looking for?"
+        },
+        {
+            "role": "Employer",
+            "input": "I agree",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ],
+            "augmented_input_bak": "I'm hoping to become a project manager."
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept",
+            "input": "I'm glad you're on board!"
+        },
+        {
+            "role": "Candidate",
+            "input": "I would like a salary of 120,000",
+            "output": [
+                {
+                    "Offer": {
+                        "Salary": "120,000 USD"
+                    }
+                }
+            ],
+            "augmented_input_bak": "Absolutely."
+        },
+        {
+            "role": "Employer",
+            "input": "I agree",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ],
+            "augmented_input_bak": "Could I get a salary of 120,000? "
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept",
+            "input": "I'm thrilled that you accept! "
+        },
+        {
+            "role": "Candidate",
+            "input": "I'd love to have a company car.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I want a company car"
+        },
+        {
+            "role": "Candidate",
+            "input": "I'm expecting a company car.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "I demand a company car"
+        },
+        {
+            "role": "Employer",
+            "input": "We are offering you a leased car.",
+            "output": [
+                {
+                    "Offer": {
+                        "Leased Car": "With leased car"
+                    }
+                }
+            ],
+            "original_utterance": "leased car"
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept",
+            "input": "Wow, that's great! I'm really pleased that you accept."
+        },
+        {
+            "role": "Candidate",
+            "input": "I am willing to have a fast promotion track",
+            "output": [
+                {
+                    "Offer": {
+                        "Promotion Possibilities": "Fast promotion track"
+                    }
+                }
+            ],
+            "augmented_input_bak": "We can also discuss your potential for a fast-track promotion."
+        },
+        {
+            "role": "Employer",
+            "input": "I'm on board with that.",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ],
+            "original_utterance": "i agree"
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept",
+            "input": "That's great news! "
+        },
+        {
+            "role": "Candidate",
+            "input": "Could we agree on an 8-hour workday?",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "8 hours"
+                    }
+                }
+            ],
+            "original_utterance": "I would like a workday of 8 hours"
+        },
+        {
+            "role": "Employer",
+            "input": "I agree.",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ],
+            "original_utterance": "I agree"
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept",
+            "input": "Great! I'm glad you're on board."
+        },
+        {
+            "role": "Candidate",
+            "input": "I'd like to request a pension of 20%, if that's possible.",
+            "output": [
+                {
+                    "Offer": {
+                        "Pension Fund": "20%"
+                    }
+                }
+            ],
+            "original_utterance": "I demand a pension of 20%"
+        },
+        {
+            "role": "Employer",
+            "input": "I agree.",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ],
+            "original_utterance": "I agree"
+        },
+        {
+            "role": "Candidate",
+            "output": [],
+            "original_utterance": "I'm happy that you accept. We can sign the agreement now. Please pick the values in the agreement draft and press Sign.",
+            "input": "That's great news! Shall we sign the agreement now? I can walk you through which values to select and then you can press Sign."
+        },
+        {
+            "role": "Employer",
+            "input": "How about 10 hours of work?",
+            "output": [
+                {
+                    "Offer": {
+                        "Working Hours": "10 hours"
+                    }
+                }
+            ],
+            "original_utterance": "Maybe you can work 10hours"
+        },
+        {
+            "role": "Candidate",
+            "input": "I agree with the offer",
+            "output": [
+                {
+                    "Accept": true
+                }
+            ]
+        },
+        {
+            "role": "Employer",
+            "input": "okay, lets sign the agreement",
+            "output": []
+        }
+    ]
+}
