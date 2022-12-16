@@ -1,8 +1,11 @@
-# GPT-Negochat: A dataset of ralistic negotiation dialogues
+# GPT-Negochat: A dataset of realistic negotiation dialogues
 
 This repository contains dialogues from the original Negochat corpus, which consists of negotiation dialogues between an Employer and a Candidate. The dialogues in this repository have been modified to sound more natural using GPT-3.
 
 ## Reference(s)
+If you're using this dataset, please cite this repository and its owner, Amogh Mannekote.
+
+Also cite the following original work:
 ```latex
 @inproceedings{konovalov2016negochat,
   title={The Negochat Corpus of Human-agent Negotiation Dialogues},
