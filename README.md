@@ -1,6 +1,6 @@
 # GPT-Negochat: A *more realistic* corpus of negotiation dialogues
 
-The **GPT-Negochat** corpus is a modified version of the original Negochat corpus, which contains negotiation dialogues between an Employer and a Candidate. The "Candidate" utterances in the original corpus were generated using a template-based NLG module and therefore, sound robotic and in general, do not sound convincingly real.
+The **GPT-Negochat** corpus is a modified version of the original Negochat corpus, which contains negotiation dialogues between an Employer and a Candidate. The utterances in the original corpus were generated using a template-based NLG module and therefore, sound robotic and in general, do not sound convincingly real.
 
 GPT-Negochat is the result of using GPT-3 to modify this original corpus to make the dialogues resemble actual job-negotiation dialogues more closely while still retaining the original meaning of the utterances.
 
