@@ -12,7 +12,7 @@ In addition to rephrasing the utterances, a small set of highly unrealistic dial
 ## Reference(s)
 If you're using this dataset, please cite this repository and its owner, Amogh Mannekote.
 
-Also cite the following original work:
+Please also cite the following original work:
 ```latex
 @inproceedings{konovalov2016negochat,
   title={The Negochat Corpus of Human-agent Negotiation Dialogues},
